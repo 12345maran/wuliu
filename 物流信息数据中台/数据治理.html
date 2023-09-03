@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>物流信息数据中台</title>
+    <link rel="shortcut icon" href="img/head.png" type="image/x-icon">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">物流信息数据中台</div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="img/head.png" class="layui-nav-img">
+                    测试用户
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">set 1</a></dd>
+                    <dd><a href="">set 2</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="login.html">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item "><a href="数据提取.html">数据提取</a></li>
+                <li class="layui-nav-item layui-this"><a href="数据治理.html">数据治理</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">数据分析</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="信息查询.html">信息查询</a></dd>
+                        <dd><a href="云数据看板.html">云数据看板</a></dd>
+                        <dd><a href="物流可视化分析.html">可视化分析</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="layui-body" style="background-color: #F6F6F6;">
+        <!-- 内容主体区域 -->
+        <div style="padding: 20px;padding-top: 10px;">
+
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin-top: 0px;">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">必做治理</li>
+                    <li>数据聚合</li>
+                    <li>数据去重</li>
+                    <li>异常值检测</li>
+                    <li>数据转换</li>
+                </ul>
+
+                <div class="layui-tab-content">
+
+                    <div class="layui-tab-item layui-show">
+                        <div style="width: 500px;height: 500px; ">
+                            <div class="layui-card">
+                                <div class="layui-card-header">身份证号治理</div>
+                                <br>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">开始治理</button>
+                                    </div>
+                                </div>
+                                <div class="layui-card-body">
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">完成数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                            <label class="layui-form-label">异常数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="layui-card">
+                                <div class="layui-card-header">物流单规则治理</div>
+                                <br>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">开始治理</button>
+                                    </div>
+                                </div>
+                                <div class="layui-card-body">
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">完成数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                            <label class="layui-form-label">异常数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+
+                <!-- 内容二 -->
+                <div class="layui-tab-item">
+                    <div style="width: 500px;height: 500px; ">
+
+                        <div class="layui-card">
+                            <div class="layui-card-header">数据聚合治理</div>
+                            <br>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="formDemo">开始治理</button>
+                                </div>
+                            </div>
+                            <div class="layui-card-body">
+                                <form class="layui-form" action="">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">完成数据</label>
+                                        <div class="layui-card">
+                                            <div class="layui-card-body">
+                                                1223<br>
+                                                111<br>
+                                            </div>
+                                        </div>
+                                        <label class="layui-form-label">异常数据</label>
+                                        <div class="layui-card">
+                                            <div class="layui-card-body">
+                                                1223<br>
+                                                111<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- 内容三 -->
+                    <div class="layui-tab-item">
+                        <div style="width: 500px;height: 500px; ">
+
+                            <div class="layui-card">
+                                <div class="layui-card-header">数据去重治理</div>
+                                <br>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">开始治理</button>
+                                    </div>
+                                </div>
+                                <div class="layui-card-body">
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">完成数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                            <label class="layui-form-label">异常数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 内容三 -->
+                    <div class="layui-tab-item">
+                        <div style="width: 500px;height: 500px; ">
+
+                            <div class="layui-card">
+                                <div class="layui-card-header">数据异常值检测治理</div>
+                                <br>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">开始治理</button>
+                                    </div>
+                                </div>
+                                <div class="layui-card-body">
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">完成数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                            <label class="layui-form-label">异常数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 内容三 -->
+                    <div class="layui-tab-item">
+                        <div style="width: 500px;height: 500px; ">
+
+                            <div class="layui-card">
+                                <div class="layui-card-header">数据转换治理</div>
+                                <br>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">开始治理</button>
+                                    </div>
+                                </div>
+                                <div class="layui-card-body">
+                                    <form class="layui-form" action="">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">完成数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                            <label class="layui-form-label">异常数据</label>
+                                            <div class="layui-card">
+                                                <div class="layui-card-body">
+                                                    1223<br>
+                                                    111<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<script src="layui/layui.js" charset="utf-8"></script>
+<script>
+    //JavaScript 代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

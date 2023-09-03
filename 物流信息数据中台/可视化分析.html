@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>物流信息数据中台</title>
+    <link rel="shortcut icon" href="img/head.png" type="image/x-icon">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
+</head>
+<body>
+
+
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">物流信息数据中台</div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="img/head.png" class="layui-nav-img">
+                    测试用户
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">set 1</a></dd>
+                    <dd><a href="">set 2</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item "><a href="数据提取.html">数据提取</a></li>
+                <li class="layui-nav-item "><a href="数据治理.html">数据治理</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">数据分析</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="信息查询.html">信息查询</a></dd>
+                        <dd><a href="云数据看板.html">云数据看板</a></dd>
+                        <dd class="layui-this"><a href="可视化分析.html">可视化分析</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body" style="background-color: #F6F6F6;">
+        <!-- 内容主体区域 -->
+        <div style="padding: 20px;padding-top: 10px;">
+
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin-top: 0px;">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">物流信息</li>
+
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <div class="layui-form">
+                            <table class="layui-table">
+                                <colgroup>
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+                                    <col width="100">
+
+
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>船公司</th>
+                                    <th>集装箱箱号</th>
+                                    <th>货物代码</th>
+                                    <th>货主名称</th>
+                                    <th>提单号</th>
+                                    <th>作业港口</th>
+                                    <th>启运地</th>
+                                    <th>目的地</th>
+                                    <th>始发时间</th>
+                                    <th>到达时间</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>苏州港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-05</td>
+                                    <td>2022-10-06</td>
+                                </tr>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>泰州港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-06</td>
+                                    <td>2022-10-08</td>
+                                </tr>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>铜陵港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-08</td>
+                                    <td>2022-10-09</td>
+                                </tr>
+                                <tr>
+                                    <td>昌盛船务</td>
+                                    <td>YWCM8059</td>
+                                    <td>DFGH</td>
+                                    <td>广大30</td>
+                                    <td>HYJZ85350</td>
+                                    <td>泰州港</td>
+                                    <td>泰州港</td>
+                                    <td>镇江港</td>
+                                    <td>2022-2-14</td>
+                                    <td>2022-2-15</td>
+                                </tr>
+                                <tr>
+                                    <td>行航国际</td>
+                                    <td>FLTI8262</td>
+                                    <td>ERTY</td>
+                                    <td>广通234</td>
+                                    <td>QPYT79717</td>
+                                    <td>南通港</td>
+                                    <td>南通港</td>
+                                    <td>马鞍山港</td>
+                                    <td>2022-11-12</td>
+                                    <td>2022-11-12</td>
+                                </tr>
+                                <tr>
+                                    <td>恒旺船务</td>
+                                    <td>FLTI8476</td>
+                                    <td>SFGC</td>
+                                    <td>鸿员000</td>
+                                    <td>XNCX73575</td>
+                                    <td>太仓港</td>
+                                    <td>太仓港</td>
+                                    <td>杭州港</td>
+                                    <td>2022-01-24</td>
+                                    <td>2022-01-24</td>
+                                </tr>
+                                <tr>
+                                    <td>恒旺船务</td>
+                                    <td>FLTI8476</td>
+                                    <td>SFGC</td>
+                                    <td>鸿员000</td>
+                                    <td>XNCX73575</td>
+                                    <td>杭州港</td>
+                                    <td>太仓港</td>
+                                    <td>杭州港</td>
+                                    <td>2022-01-24</td>
+                                    <td>2022-01-25</td>
+                                </tr>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>苏州港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-05</td>
+                                    <td>2022-10-09</td>
+                                </tr>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>苏州港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-05</td>
+                                    <td>2022-10-09</td>
+                                </tr>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>苏州港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-05</td>
+                                    <td>2022-10-09</td>
+                                </tr>
+                                <tr>
+                                    <td>创新船舶</td>
+                                    <td>YWCM8054</td>
+                                    <td>SDFG</td>
+                                    <td>宜江897</td>
+                                    <td>TKNG29248</td>
+                                    <td>苏州港</td>
+                                    <td>苏州港</td>
+                                    <td>铜陵港</td>
+                                    <td>2022-10-05</td>
+                                    <td>2022-10-09</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </tbody>
+                        </table>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<script src="layui/layui.js" charset="utf-8"></script>
+<script>
+    //JavaScript 代码区域
+    layui.use('element', function() {
+        var element = layui.element;
+
+    });
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

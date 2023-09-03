@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>不同港口的货物吞吐趋势</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h2>港口不同货物吞吐趋势(马鞍山港)</h2>
+<a href="柱状图.html">不同港口的货物吞吐量</a>
+<a href="饼图.html">不同港口的货物占比</a>
+<div>
+    <label for="mySelect">选择货物：</label>
+    <select id="mySelect">
+        <option value="data1">大豆奶</option>
+        <option value="data2">铁矿</option>
+        <option value="data3">三钙</option>
+        <option value="data4">大豆粉</option>
+        <option value="data5">燕麦</option>
+    </select>
+</div>
+<div>
+    <canvas id="myChart" width="1000" height="600"></canvas>
+</div>
+<script src="zheXian.js"></script>
+</body>
+</html>

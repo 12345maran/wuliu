@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>不同港口的货物占比</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h2>不同港口的货物占比</h2>
+<a href="柱状图.html">不同港口的货物吞吐量</a>
+<a href="折线图.html">港口不同类型货物吞吐趋势</a>
+<div>
+    <label for="mySelect">选择一个港口：</label>
+    <select id="mySelect">
+        <option value="data1">马鞍山港</option>
+        <option value="data2">连云港</option>
+        <option value="data3">南通港</option>
+    </select>
+</div>
+<div>
+    <canvas id="myChart" width="600" height="600"></canvas>
+</div>
+<script src="myScript.js"></script>
+</body>
+</html>
